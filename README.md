@@ -43,6 +43,7 @@ If there's more that they should know about, though, this is the place to mentio
 This module required some modules : 
 * puppetlabs-stdlib
 * puppetlabs-ntp
+* puppetlabs-motd
 
 ### Beginning with cust_base
 
