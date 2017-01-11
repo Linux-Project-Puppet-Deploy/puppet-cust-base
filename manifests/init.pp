@@ -8,7 +8,7 @@
 #
 # Copyright 2017 Tony LAUNAY.
 #
-class minimale {
+class cust_base {
   include motd
   include stdlib
 
