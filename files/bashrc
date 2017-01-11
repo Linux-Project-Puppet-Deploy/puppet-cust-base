@@ -1,0 +1,22 @@
+#
+# Managed by Puppet !
+#
+
+export LS_OPTIONS='--color=auto'
+alias ls='ls $LS_OPTIONS'
+alias ll='ls $LS_OPTIONS -lAh'
+alias l='ls $LS_OPTIONS -lh'
+alias df='df -Th'
+alias grep='grep --color'
+
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
+fi
+
+color_prompt=yes
+
+PS1='\[\033[00m\][\[\033[31m\]\u\[\033[00m\]@\[\033[35m\]\h\[\033[00m\]:\[\033[32m\]\w\[\033[00m\]]\[\033[00m\]\$'
